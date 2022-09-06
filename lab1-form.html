@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us" style="background-color:#E5E7E9;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">   
+  <title>form creation</title> 
+</head>
+<body>
+  <form action="lab1-form.html" method="post">
+    <label for="fname" >ENTER THE NAME :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="fname" name="fname" placeholder="NAME" required maxlength="25"><br><br>
+    <label for="email">ENTER THE EMAIL :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" id="email" name="email" value="test@example.com" required autofocus><br><br>
+    <label for="pwd">ENTER THE PASSWORD :</label>&nbsp;&nbsp;&nbsp;
+    <input type="password" id="pwd" name="pwd" minlength="6" required ><br><br>
+    <label for="category">SELECT CATEGORY :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="category" name="category" required>
+      <option value="student">STUDENT</option>
+      <option value="employee">EMPLOYEE</option>
+      <option value="freelancer" selected>FREELANCER</option>    
+    </select><br><br>
+    <label for="date">EVENT DATE :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="date" id="date" name="Event date" required><br><br>
+    <label for="ticket">TICKET :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="ticket" name="ticket" value="1 ticket" required>1 ticket
+    <input type="radio" id="ticket" name="ticket" value="2 ticket" required checked>2 ticket
+    <input type="radio" id="ticket" name="ticket" value="3 ticket" required>3 ticket<br><br>
+    <label for="pay">PAYMENT :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" id="pay" name="payment" value="payment" required>Online payment<br><br>
+    <Label for="notes">NOTES :</Label><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="Notes" id="notes" placeholder="NOTES"></textarea><br><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit"  name="submit" value="submit">
+    
+  </form>        
+</body>  
+</html>
